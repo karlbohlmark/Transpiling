@@ -1,0 +1,43 @@
+#header #mainnavigation .selected a.kultur { background-position: -189px -36px }
+#header #mainnavigation a.opinion {
+    width: 69px;
+    background-position: 11px -59px;
+}
+#header #mainnavigation .selected a.opinion { background-position: -189px -59px }
+#header #mainnavigation a.sport {
+    width: 54px;
+    background-position: 11px -82px;
+}
+
+
+#header{
+	#mainnavigation{
+		.selected a.kultur{ background-position: -189px -36px }
+	
+
+		.selected a.opinion { background-position: -189px -59px }
+
+		a.opinion {
+		    width: 69px;
+		    background-position: 11px -59px;
+		}
+
+		 a.sport {
+		    width: 54px;
+		    background-position: 11px -82px;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+#header #mainnavigation .selected a.sport { background-position: -189px -82px }
+#header #mainnavigation a.resor {
+    width: 54px;
+    background-position: 11px -105px;
+}

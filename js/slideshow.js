@@ -80,9 +80,10 @@ var Slideshow = (function(){
 	 */
 	function onDocumentKeyDown( event ) {
 		
-		if( event.keyCode >= 37 && event.keyCode <= 40 ) {
+		if( (event.keyCode >= 37 && event.keyCode <= 40) || event.keyCode == 32 ) {
 			
 			switch( event.keyCode ) {
+				case 32: step(); return; break;
 				case 37: navigateLeft(); break; // left
 				case 39: navigateRight(); break; // right
 				case 38: navigateUp(); break; // up
@@ -237,6 +238,20 @@ var Slideshow = (function(){
 		if( indexv > 0 ) url += '/' + indexv
 		
 		window.location.hash = url;
+	}
+
+	/**
+	* Incrementally show items in current slide
+	*/
+	function step(){
+		var present = document.querySelector('#main>.present');
+		present = present.querySelector('.present') || present;
+		var lastShownStep = [].slice.call(present.classList)
+							.filter( function(className) { return className.indexOf('show-step')!=-1; } )
+							.map( function(className) { return className.split('-')[2]; } )
+							.sort()
+							.pop() || 0;
+		present.classList.add('show-step-' + ++lastShownStep);
 	}
 	
 	/**

@@ -170,6 +170,39 @@ h4.inverted {
 	font-weight: 600;
 }
 
+.step-1, .step-2, .step-3, .step-4{
+	display:none;
+}
+
+.show-step-1 .step-1{
+	display:block;
+}
+
+.show-step-2 .step-2{
+	display:block;
+}
+
+.show-step-3 .step-3{
+	display:block;
+}
+
+.show-step-4 .step-4{
+	display:block;
+}
+
+#lesslogo, #styluslogo{
+	position:absolute;
+	top:255px;
+}
+
+#lesslogo{
+	left:67px;
+}
+
+#styluslogo{
+	left:518px;
+}
+
 ol {
 	list-style: decimal;
 	list-style-position: inside;
