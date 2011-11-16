@@ -138,6 +138,8 @@ var Slideshow = (function(){
 			}
 			else if( point.y > window.innerHeight - ht ) {
 				navigateDown();
+			} else{
+				step();
 			}
 			
 			slide();
