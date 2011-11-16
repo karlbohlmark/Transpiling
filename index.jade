@@ -1,0 +1,154 @@
+!!! 5
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title CSS 3D Slideshow
+    link(href='http://fonts.googleapis.com/css?family=Crimson+Text:regular,600,bold', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', href='styles.css')
+    link(rel='stylesheet', href='css/reset.css')
+    link(rel='stylesheet', href='css/main.css')
+  body
+    // Any section element inside of this container is displayed as a slide 
+    #main
+      section
+        h1 Dude where's my curlies
+        h3.inverted Transpiling to web standards.
+        script
+          var message = navigator.userAgent.match( /(iPhone|iPad|iPod|Android)/i ) ? 'Tap to navigate' : 'Navigate via keyboard';
+          document.write( '<p style="color: rgba(0,0,0,0.1); text-shadow: none;">('+message+')</p>' );
+      section
+        h2 Transpiling
+        p.step-1 An (automated) process of converting source code from one language to another
+        p.step-2 Kind of like video transcoding
+
+      section
+        h2 Web standards
+        p.step-1 The target for pretty much everything we do.
+        p.step-2 It's what enables us
+        p.step-3 ..and limits us
+      
+      section
+        h2 We do not write the standards
+        h3.step-1 We do not implement the standards
+
+      section
+        h2 Web Standards are great
+        p.step-1 The promised land of "write once, run everywhere"
+        p.step-2 (ehemm..)
+        p.step-3 
+         | But they are not always elegant.
+
+        .step-3
+          #uglycss
+            img(src='uglycss.png')
+      
+      section
+        h3 Sometimes it feels like the spec authors do not spend much time using their own creation
+
+      section
+        p Lets say you want to get the element corresponding to the css selector 'div.findme'
+        div
+          img.step-1(src="getbyselector.png", style="margin:auto")
+        div
+          img.step-2(src="getbyselectorjquery.png", style="margin:auto")
+      
+      section
+        h3 Now for something completely different
+        img(src="silly.png")
+      // Example of nested vertical slides 
+      section
+        section
+          h2 Ssshhh
+          p
+            | I'll let you in on a secret...
+          a.image(href='#/2/1')
+            img(src='data:image/png;base64,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')
+        section
+          h2 HTML documents are hierarchical
+          div
+            img(src='html.png')
+
+        section
+          h2  Don't tell the people who wrote the CSS spec
+          .step-1
+            img(src='moreuglycss.png')
+
+        section
+          h2 Because they seem to think that this
+          div
+            img(src='html-proper-big.png')
+
+        section
+          h2 Should actually be written like this
+          div
+            img(src='html-absurd-big.png')
+
+      section
+        h2 So how should CSS actually look?
+        p.step-1(style='float: left; margin-left: 55px;') Maybe like this
+        p.step-2(style='float: right; margin-right: 120px;') Or even
+        div(style='clear: both; padding: 0 70px;')
+          img.step-1.inline(style='float: left;', src='less.png')
+          img.step-2(style='float: right;', src='stylus.png')
+        img#lesslogo.step-3(src='lesslogo.png')
+        img#styluslogo.step-4(src='styluslogo.png')
+
+      section
+        h2 Well that's much better!
+        div(style="height:50px")  
+        p.step-1 It looks just like my html minus a bucket of angle brackets
+        p.step-2 Well, speaking of angle brackets...
+        p.step-3 Why do we write those?
+      
+      section
+        h3 Because they were given to us from our w3c overlords
+        img(src="w3c.png")
+        p.step-1 Kind of a good reason actually
+
+      section
+        h2 It is not in the stars to hold our destiny but in ourselves. 
+        p - Shakespeare
+
+      section
+        h2 Let me introduce Jade
+        img.step-1(src="jade.png")
+                
+      section
+        h2 Html without angle brackets and end tags
+        img(src="jade-ex.png")
+
+      section
+        h2 Isomorphic
+        img(src="styl-comp.png")
+        img(src="jade-comp3.png")
+
+      section
+        h2 That leaves us with JavaScript
+        p.step-1 "Could javascript possibly be made any better?"
+        p.step-2 I can here you asking
+
+
+      section
+        h2 Just listen to the name:
+        img.step-1(src="coffee.png", style="margin:auto")
+
+      section
+        h2 Here to save the day
+        div
+          ul
+            li
+              a(href='http://lesscss.org/') Less
+            li
+              a(href='http://learnboost.github.com/stylus/') Stylus
+            li
+              a(href='http://jade-lang.com/') Jade
+            li
+              a(href='http://jashkenas.github.com/coffee-script/') CoffeeScript
+      section
+        h2 Spectacular image!
+        a.image(href='http://hakim.se/experiments/html5/breakdom/', target='_blank')
+          img(src='assets/images/breakdom.jpg')
+      section
+        h1 THE END
+        h3.inverted Slide system by Hakim El Hattab / hakim.se
+    script(src='js/slideshow.js')
